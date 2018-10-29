@@ -1,0 +1,173 @@
+[2018-10-29T14:26:59.985] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-10-29T14:26:59.993] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-10-29T14:26:59.994] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-10-29T14:27:00.001] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "chat", "127.0.0.1", 3005
+[2018-10-29T14:27:00.090] [ERROR] pinus-admin - [chat-server-1 monitorAgent.js] server "chat-server-1" "chat" register master failed:{"code":-1,"msg":"server auth failed"}Error
+    at Object.pLogger.(anonymous function) [as error] (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-logger/lib/logger.ts:59:34)
+    at MqttClient.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/monitor/monitorAgent.ts:88:24)
+    at emitOne (events.js:116:13)
+    at MqttClient.emit (events.js:211:7)
+    at Connection.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/protocol/mqtt/mqttClient.ts:104:18)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at Connection.emitPacket (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/mqtt-connection/connection.js:10:8)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at addChunk (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Connection.Readable.push (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/duplexify/index.js:170:26)
+    at DestroyableTransform.onreadable (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/duplexify/index.js:134:10)
+    at emitNone (events.js:106:13)
+[2018-10-29T14:27:00.093] [ERROR] pinus-admin - [chat-server-1 mqttClient.js] mqtt socket is disconnect, remote server host: 127.0.0.1, port: 3005Error
+    at Object.pLogger.(anonymous function) [as error] (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-logger/lib/logger.ts:59:34)
+    at Connection.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/protocol/mqtt/mqttClient.ts:123:20)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at Connection.emitPacket (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/mqtt-connection/connection.js:10:8)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at addChunk (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Connection.Readable.push (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/duplexify/index.js:170:26)
+    at DestroyableTransform.onreadable (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/duplexify/index.js:134:10)
+    at emitNone (events.js:106:13)
+    at DestroyableTransform.emit (events.js:208:7)
+    at emitReadable_ (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:504:10)
+    at emitReadable (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:498:62)
+[2018-10-29T14:27:01.098] [INFO] pinus-admin - [chat-server-1 mqttClient.js] reconnect delay 1 s
+[2018-10-29T14:27:01.103] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] chat-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"connector-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":" --inspect=10001","serverType":"connector","remoterPaths":[{"namespace":"sys","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/frontend"},{"namespace":"user","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/remote"}],"handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/handler"],"pid":57291},"gate-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--inspect=10003","serverType":"gate","handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/gate/handler"]},"chat-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"chat-server-1","host":"127.0.0.1","port":6050,"args":"--inspect=10002","serverType":"chat","remoterPaths":[{"namespace":"sys","serverType":"chat","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/backend"}],"handlerPaths":[]}}}
+[2018-10-29T14:27:01.107] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] chat-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"connector-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":" --inspect=10001","serverType":"connector","remoterPaths":[{"namespace":"sys","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/frontend"},{"namespace":"user","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/remote"}],"handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/handler"],"pid":57291},"gate-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--inspect=10003","serverType":"gate","handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/gate/handler"]},"chat-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"chat-server-1","host":"127.0.0.1","port":6050,"args":"--inspect=10002","serverType":"chat","remoterPaths":[{"namespace":"sys","serverType":"chat","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/backend"}],"handlerPaths":[]}}}
+[2018-10-29T14:50:40.907] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-10-29T14:50:40.913] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-10-29T14:50:40.914] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-10-29T14:50:40.921] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "chat", "127.0.0.1", 3005
+[2018-10-29T14:50:41.000] [ERROR] pinus-admin - [chat-server-1 monitorAgent.js] server "chat-server-1" "chat" register master failed:{"code":-1,"msg":"server auth failed"}Error
+    at Object.pLogger.(anonymous function) [as error] (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-logger/lib/logger.ts:59:34)
+    at MqttClient.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/monitor/monitorAgent.ts:88:24)
+    at emitOne (events.js:116:13)
+    at MqttClient.emit (events.js:211:7)
+    at Connection.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/protocol/mqtt/mqttClient.ts:104:18)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at Connection.emitPacket (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/mqtt-connection/connection.js:10:8)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at addChunk (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Connection.Readable.push (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/duplexify/index.js:170:26)
+    at DestroyableTransform.onreadable (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/duplexify/index.js:134:10)
+    at emitNone (events.js:106:13)
+[2018-10-29T14:50:41.003] [ERROR] pinus-admin - [chat-server-1 mqttClient.js] mqtt socket is disconnect, remote server host: 127.0.0.1, port: 3005Error
+    at Object.pLogger.(anonymous function) [as error] (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-logger/lib/logger.ts:59:34)
+    at Connection.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/protocol/mqtt/mqttClient.ts:123:20)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at Connection.emitPacket (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/mqtt-connection/connection.js:10:8)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at addChunk (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Connection.Readable.push (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/duplexify/index.js:170:26)
+    at DestroyableTransform.onreadable (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/duplexify/index.js:134:10)
+    at emitNone (events.js:106:13)
+    at DestroyableTransform.emit (events.js:208:7)
+    at emitReadable_ (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:504:10)
+    at emitReadable (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/readable-stream/lib/_stream_readable.js:498:62)
+[2018-10-29T14:50:42.007] [INFO] pinus-admin - [chat-server-1 mqttClient.js] reconnect delay 1 s
+[2018-10-29T14:50:42.013] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] chat-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"connector-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":" --inspect=10001","serverType":"connector","remoterPaths":[{"namespace":"sys","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/frontend"},{"namespace":"user","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/remote"}],"handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/handler"],"pid":57518},"gate-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--inspect=10003","serverType":"gate","handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/gate/handler"]},"chat-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"chat-server-1","host":"127.0.0.1","port":6050,"args":"--inspect=10002","serverType":"chat","remoterPaths":[{"namespace":"sys","serverType":"chat","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/backend"},{"namespace":"user","serverType":"chat","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/chat/remote"}],"handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/chat/handler"]}}}
+[2018-10-29T14:50:42.017] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] chat-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"connector-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":" --inspect=10001","serverType":"connector","remoterPaths":[{"namespace":"sys","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/frontend"},{"namespace":"user","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/remote"}],"handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/handler"],"pid":57518},"gate-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--inspect=10003","serverType":"gate","handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/gate/handler"]},"chat-server-1":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"chat-server-1","host":"127.0.0.1","port":6050,"args":"--inspect=10002","serverType":"chat","remoterPaths":[{"namespace":"sys","serverType":"chat","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/backend"},{"namespace":"user","serverType":"chat","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/chat/remote"}],"handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/chat/handler"]}}}
+[2018-10-29T14:54:31.288] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-10-29T14:54:31.297] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-10-29T14:54:31.298] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-10-29T14:54:31.305] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "chat", "127.0.0.1", 3005
+[2018-10-29T14:54:31.399] [ERROR] logger - [chat-server-1 console] Caught exception: SyntaxError: /Users/admin/pinusChat/myWebsocketChat/game-server/dist/config/adminServer.json: Unexpected token m in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at Object.Module._extensions..json (module.js:671:27)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at defaultAuthServerMonitor (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/util/utils.ts:171:19)
+    at MqttClient.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/monitor/monitorAgent.ts:149:13)
+    at emitNone (events.js:106:13)
+    at MqttClient.emit (events.js:208:7)
+    at Connection.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/protocol/mqtt/mqttClient.ts:91:22)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at Connection.emitPacket (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/mqtt-connection/connection.js:10:8)
+    at emitOne (events.js:116:13)Error
+    at Object.pLogger.(anonymous function) [as error] (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-logger/lib/logger.ts:59:34)
+    at process.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/preload.ts:32:17)
+    at emitOne (events.js:116:13)
+    at process.emit (events.js:211:7)
+    at process._fatalException (bootstrap_node.js:378:26)
+[2018-10-29T14:57:31.383] [ERROR] pinus-admin - [chat-server-1 mqttClient.js] mqtt rpc client checkKeepAlive error timeout for 120000Error
+    at Object.pLogger.(anonymous function) [as error] (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-logger/lib/logger.ts:59:34)
+    at MqttClient.checkKeepAlive (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/protocol/mqtt/mqttClient.ts:221:28)
+    at Timeout._onTimeout (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/protocol/mqtt/mqttClient.ts:207:18)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+[2018-10-29T14:58:52.127] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-10-29T14:58:52.135] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-10-29T14:58:52.136] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-10-29T14:58:52.143] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "chat", "127.0.0.1", 3005
+[2018-10-29T14:58:52.224] [ERROR] logger - [chat-server-1 console] Caught exception: SyntaxError: /Users/admin/pinusChat/myWebsocketChat/game-server/dist/config/adminServer.json: Unexpected token m in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at Object.Module._extensions..json (module.js:671:27)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at defaultAuthServerMonitor (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/util/utils.ts:171:19)
+    at MqttClient.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/monitor/monitorAgent.ts:149:13)
+    at emitNone (events.js:106:13)
+    at MqttClient.emit (events.js:208:7)
+    at Connection.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-admin/lib/protocol/mqtt/mqttClient.ts:91:22)
+    at emitOne (events.js:116:13)
+    at Connection.emit (events.js:211:7)
+    at Connection.emitPacket (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/mqtt-connection/connection.js:10:8)
+    at emitOne (events.js:116:13)Error
+    at Object.pLogger.(anonymous function) [as error] (/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus-logger/lib/logger.ts:59:34)
+    at process.<anonymous> (/Users/admin/pinusChat/myWebsocketChat/game-server/preload.ts:32:17)
+    at emitOne (events.js:116:13)
+    at process.emit (events.js:211:7)
+    at process._fatalException (bootstrap_node.js:378:26)
+[2018-10-29T14:59:56.595] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-10-29T14:59:56.601] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-10-29T14:59:56.602] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-10-29T14:59:56.609] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "chat", "127.0.0.1", 3005
+[2018-10-29T14:59:56.670] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-10-29T14:59:56.671] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" finish start
+[2018-10-29T14:59:56.672] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" startup in 74 ms
+[2018-10-29T14:59:56.673] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] [chat-server-1] receive addServer signal: {"action":"addServer","server":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--inspect=10003","serverType":"gate","handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/gate/handler"],"pid":57816}}
+[2018-10-29T15:00:08.312] [INFO] logger - [chat-server-1 console] connected
+[2018-10-29T15:00:08.314] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"test"}, groups: {}, opts: undefined
+[2018-10-29T15:00:14.406] [DEBUG] forward-log - [chat-server-1 msgRemote.js] backend server [chat-server-1] handle message: {"id":3,"type":0,"compressRoute":1,"route":"chat.chatHandler.send","body":{"rid":"test","content":"svbd","from":"test","target":"*"},"compressGzip":0}
+[2018-10-29T15:00:14.409] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onChat, msg: {"msg":"svbd","from":"test","target":"*"}, groups: {"connector-server-1":["test*test"]}, opts: undefined
+[2018-10-29T15:00:29.195] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"test001"}, groups: {"connector-server-1":["test*test"]}, opts: undefined
+[2018-10-29T15:00:38.861] [DEBUG] forward-log - [chat-server-1 msgRemote.js] backend server [chat-server-1] handle message: {"id":4,"type":0,"compressRoute":1,"route":"chat.chatHandler.send","body":{"rid":"test","content":"ewqfew","from":"test","target":"*"},"compressGzip":0}
+[2018-10-29T15:00:38.862] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onChat, msg: {"msg":"ewqfew","from":"test","target":"*"}, groups: {"connector-server-1":["test*test","test001*test"]}, opts: undefined
+[2018-10-29T15:00:42.346] [DEBUG] forward-log - [chat-server-1 msgRemote.js] backend server [chat-server-1] handle message: {"id":3,"type":0,"compressRoute":1,"route":"chat.chatHandler.send","body":{"rid":"test","content":"ergvrwe","from":"test001","target":"*"},"compressGzip":0}
+[2018-10-29T15:00:42.346] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onChat, msg: {"msg":"ergvrwe","from":"test001","target":"*"}, groups: {"connector-server-1":["test*test","test001*test"]}, opts: undefined
+[2018-10-29T15:01:04.681] [DEBUG] forward-log - [chat-server-1 msgRemote.js] backend server [chat-server-1] handle message: {"id":4,"type":0,"compressRoute":1,"route":"chat.chatHandler.send","body":{"rid":"test","content":"werrf","from":"test001","target":"test"},"compressGzip":0}
+[2018-10-29T15:01:04.682] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onChat, msg: {"msg":"werrf","from":"test001","target":"test"}, groups: {"connector-server-1":["test*test"]}, opts: undefined
+[2018-10-29T15:01:18.826] [DEBUG] forward-log - [chat-server-1 msgRemote.js] backend server [chat-server-1] handle message: {"id":5,"type":0,"compressRoute":1,"route":"chat.chatHandler.send","body":{"rid":"test","content":"sdcsd","from":"test","target":"test"},"compressGzip":0}
+[2018-10-29T15:01:18.827] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onChat, msg: {"msg":"sdcsd","from":"test","target":"test"}, groups: {"connector-server-1":["test*test"]}, opts: undefined
+[2018-10-29T15:08:44.214] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-10-29T15:08:44.221] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-10-29T15:08:44.222] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-10-29T15:08:44.229] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "chat", "127.0.0.1", 3005
+[2018-10-29T15:08:44.289] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-10-29T15:08:44.290] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" finish start
+[2018-10-29T15:08:44.290] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" startup in 73 ms
+[2018-10-29T15:08:44.291] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] [chat-server-1] receive addServer signal: {"action":"addServer","server":{"main":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":" --inspect=10001","serverType":"connector","remoterPaths":[{"namespace":"sys","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/node_modules/pinus/dist/lib/common/remote/frontend"},{"namespace":"user","serverType":"connector","path":"/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/remote"}],"handlerPaths":["/Users/admin/pinusChat/myWebsocketChat/game-server/dist/app/servers/connector/handler"],"pid":57907}}
+[2018-10-29T15:09:21.130] [INFO] logger - [chat-server-1 console] connected
+[2018-10-29T15:09:21.131] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"test001"}, groups: {}, opts: undefined
+[2018-10-29T15:11:57.696] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onLeave, msg: {"user":"test001"}, groups: {}, opts: undefined
