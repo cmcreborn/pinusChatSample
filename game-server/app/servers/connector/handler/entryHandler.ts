@@ -22,6 +22,8 @@ export class EntryHandler {
         let rid = msg.rid;
         let uid = msg.username + '*' + rid;
         let sessionService = self.app.get('sessionService');
+        console.log('connector enter... msg = ');
+        console.log(msg);
 
         // duplicate log in
         if (!!sessionService.getByUid(uid)) {
